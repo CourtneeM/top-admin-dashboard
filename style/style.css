@@ -10,9 +10,24 @@ body {
   height: 100vh;
 }
 
-#side-bar {
+#sidebar {
   color: #fff;
   background-color: #44caff;
+}
+#sidebar h1 {
+  margin: 30px 30px 0;
+  font-size: 1.8rem;
+}
+#sidebar ul {
+  margin: 70px 40px;
+}
+#sidebar ul li {
+  width: fit-content;
+  margin: 30px 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  list-style: none;
+  cursor: pointer;
 }
 
 #main-content-container {
