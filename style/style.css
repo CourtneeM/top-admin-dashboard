@@ -3,4 +3,20 @@
   padding: 0;
 }
 
+body {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+#side-bar {
+  color: #fff;
+  background-color: #44caff;
+}
+
+#main-content-container {
+  background-color: #ddd;
+}
+
 /*# sourceMappingURL=style.css.map */

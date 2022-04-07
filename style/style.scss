@@ -1,4 +1,31 @@
+$primary-text-color: #000;
+$secondary-text-color: #fff;
+$white: #fff;
+$gray: #ddd;
+$orange: rgb(219, 187, 6);
+$blue: rgb(68, 202, 255);
+
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+#side-bar {
+  color: $secondary-text-color;
+  background-color: $blue;
+}
+
+// header {
+
+// }
+
+#main-content-container {
+  background-color: $gray;
 }
