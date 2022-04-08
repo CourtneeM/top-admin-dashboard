@@ -10,6 +10,10 @@ body {
   height: 100vh;
 }
 
+.icon {
+  width: 24px;
+}
+
 #sidebar {
   color: #fff;
   background-color: #44caff;
@@ -19,9 +23,12 @@ body {
   font-size: 1.8rem;
 }
 #sidebar ul {
-  margin: 70px 40px;
+  margin: 70px 30px;
 }
 #sidebar ul li {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  column-gap: 20px;
   width: fit-content;
   margin: 30px 0;
   font-size: 1.3rem;
