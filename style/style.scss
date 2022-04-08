@@ -147,6 +147,14 @@ main header {
     border-left: 9px solid $orange;
     border-radius: 10px;
 
+    h4 { font-size: 1.1rem; }
+    
+    p {
+      font-size: 0.85rem;
+      line-height: 18px;
+      color: #666;
+    }
+
     ul {
       position: absolute;
       bottom: 25px;
@@ -175,6 +183,17 @@ main header {
         padding: 35px;
         background-color: $white;
         border-radius: 10px;
+
+        h4 {
+          margin-bottom: 4px;
+          font-size: 0.95rem;
+        }
+
+        p {
+          font-size: 0.75rem;
+          line-height: 15px;
+          color: #666;
+        }
       }
     }
     
@@ -212,6 +231,16 @@ main header {
       grid-template-columns: 1fr 2fr;
       padding-top: 15px;
       padding-bottom: 15px;
+
+      p { font-size: 0.85rem; }
+
+      p:first-child {
+        margin-bottom: 5px;
+        font-weight: 600;
+        color: #333;
+      }
+
+      p:last-child { color: #666; }
 
       &:first-child { padding-top: 0; }
       &:last-child { padding-bottom: 0; }
