@@ -89,12 +89,17 @@ main header #actions-container {
 }
 #main-content-container .project-card ul {
   position: absolute;
-  bottom: 30px;
-  right: 30px;
+  bottom: 25px;
+  right: 40px;
 }
 #main-content-container .project-card ul li {
   display: inline-block;
   list-style: none;
+  margin-right: 20px;
+  cursor: pointer;
+}
+#main-content-container .project-card ul li:last-child {
+  margin-right: 0;
 }
 #main-content-container #right-sidebar #announcements-container {
   margin-bottom: 50px;

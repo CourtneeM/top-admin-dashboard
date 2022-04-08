@@ -107,12 +107,16 @@ main header {
 
     ul {
       position: absolute;
-      bottom: 30px;
-      right: 30px;
+      bottom: 25px;
+      right: 40px;
       
       li {
         display: inline-block;
         list-style: none;
+        margin-right: 20px;
+        cursor: pointer;
+
+        &:last-child { margin-right: 0; }
       }
     }
   }
