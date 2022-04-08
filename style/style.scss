@@ -52,8 +52,17 @@ main header {
   padding: 20px 50px;
 
   #search-container {
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    column-gap: 15px;
+
+    .icon {
+      align-self: center;
+      cursor: pointer;
+    }
+
     input {
-      width: 75%;
+      width: 90%;
       min-width: 100px;
       padding: 7px;
       background: $gray;
@@ -64,18 +73,51 @@ main header {
 
   #account-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 2fr;
+    column-gap: 10px;
     justify-self: end;
+    justify-items: center;
+    align-items: center;
+
+    .icon { cursor: pointer; }
+
+    p {
+      font-weight: 800;
+    }
   }
 
   #user-display-container {
     display: grid;
-    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-columns: 0.5fr 2fr;
+    align-items: center;
+
+    p:first-child {
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    p:last-child {
+      font-size: 1.4rem;
+      font-weight: 800;
+    }
   }
 
   #actions-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    column-gap: 15px;
+    align-items: center;
+
+    button {
+      height: 40px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: $white;
+      background-color: $blue;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+    }
   }
 }
 

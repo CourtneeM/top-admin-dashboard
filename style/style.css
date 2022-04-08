@@ -43,8 +43,17 @@ main header {
   row-gap: 50px;
   padding: 20px 50px;
 }
+main header #search-container {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  column-gap: 15px;
+}
+main header #search-container .icon {
+  align-self: center;
+  cursor: pointer;
+}
 main header #search-container input {
-  width: 75%;
+  width: 90%;
   min-width: 100px;
   padding: 7px;
   background: #ddd;
@@ -53,16 +62,46 @@ main header #search-container input {
 }
 main header #account-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 2fr;
+  column-gap: 10px;
   justify-self: end;
+  justify-items: center;
+  align-items: center;
+}
+main header #account-container .icon {
+  cursor: pointer;
+}
+main header #account-container p {
+  font-weight: 800;
 }
 main header #user-display-container {
   display: grid;
-  grid-template-columns: 0.5fr 1.5fr;
+  grid-template-columns: 0.5fr 2fr;
+  align-items: center;
+}
+main header #user-display-container p:first-child {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+main header #user-display-container p:last-child {
+  font-size: 1.4rem;
+  font-weight: 800;
 }
 main header #actions-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  column-gap: 15px;
+  align-items: center;
+}
+main header #actions-container button {
+  height: 40px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #44caff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
 }
 
 #main-content-container {
